@@ -1,3 +1,3 @@
-const String route = "/";
-const String routeAddblog = "/addBlog";
-const String routeViewBlog = "/viewBlog";
+const String routeRoot = "/";
+const String routeAddblog = "/add_blog";
+const String routeViewBlog = "/view_blog";

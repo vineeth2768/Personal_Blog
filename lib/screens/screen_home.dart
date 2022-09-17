@@ -13,11 +13,33 @@ class ScreenHome extends StatelessWidget {
       body: ListView.builder(
           itemCount: 20,
           itemBuilder: (context, index) {
-            return Card(
-              child: ListTile(
-                title: Text("${index + 1}.HeadLine"),
-                subtitle: const Text("Content about Blog"),
+            return InkWell(
+              child: Card(
+                child: ListTile(
+                  title: Text("${index + 1}.HeadLine"),
+                  subtitle: const Text(
+                    "Content about Blog",
+                  ),
+                  trailing: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      ////// Edit Button ////////////////
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(Icons.edit),
+                      ),
+                      ////////// Delete Button///////////
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(Icons.delete),
+                      )
+                    ],
+                  ),
+                ),
               ),
+              onTap: () {
+                Navigator.pushNamed(context, routeViewBlog);
+              },
             );
           }),
       floatingActionButton: FloatingActionButton(

@@ -19,9 +19,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: route,
+      debugShowCheckedModeBanner: false,
+      initialRoute: routeRoot,
       routes: {
-        route: (context) => const ScreenHome(),
+        routeRoot: (context) => const ScreenHome(),
         routeAddblog: (context) => const ScreenAddBlog(),
         routeViewBlog: (context) => const ScreenViewBlog(),
       },
