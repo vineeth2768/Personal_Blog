@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 import 'package:personal_blog/const/size/size.dart';
 
 class ScreenViewBlog extends StatelessWidget {
